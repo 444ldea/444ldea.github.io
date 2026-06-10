@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      {{ with .Site.Params.github }}<a href="{{ . }}" rel="me noopener" target="_blank">github</a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a href="{{ . }}" rel="me noopener" target="_blank">linkedin</a>{{ end }}
+      {{ with .Site.Params.email }}<a href="mailto:{{ . }}">email</a>{{ end }}
+    </div>
+    <div class="copy">© {{ now.Year }} {{ .Site.Params.author }}</div>
+  </div>
+</footer>

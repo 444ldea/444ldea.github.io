@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="article">
+  <div class="wrap">
+    <div class="meta">
+      {{ .Date.Format "2006-01-02" }}
+      {{ with .ReadingTime }} · {{ . }} min de lectura{{ end }}
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<div class="summary">{{ . }}</div>{{ end }}
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    {{ with .Params.tags }}
+    <div class="post-tags" style="margin-top:40px;display:flex;gap:8px;flex-wrap:wrap;">
+      {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+    <p style="margin-top:48px;">
+      <a href="{{ "/posts/" | relURL }}" class="btn">← Todos los proyectos</a>
+    </p>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 230" role="img" aria-label="Timeline del beaconing: 11 consultas DNS separadas por 20 segundos exactos" font-family="ui-monospace, monospace">
+  <style>
+    .t{fill:#d7dce2;font-size:14px;font-weight:500;}
+    .s{fill:#8b949e;font-size:12px;}
+    .f{fill:#5c6470;font-size:12px;}
+    .dot{fill:#2a1416;stroke:#e5534b;stroke-width:1.5;}
+  </style>
+
+  <text class="t" x="50" y="44">banamyi.vb1kivdlvc.com</text>
+  <text class="s" x="50" y="64">11 consultas DNS · intervalo constante · jitter 0</text>
+
+  <line x1="50" y1="120" x2="630" y2="120" stroke="#2a323d" stroke-width="1"/>
+
+  <circle class="dot" cx="56"  cy="120" r="6"/>
+  <circle class="dot" cx="108" cy="120" r="6"/>
+  <circle class="dot" cx="160" cy="120" r="6"/>
+  <circle class="dot" cx="212" cy="120" r="6"/>
+  <circle class="dot" cx="264" cy="120" r="6"/>
+  <circle class="dot" cx="316" cy="120" r="6"/>
+  <circle class="dot" cx="368" cy="120" r="6"/>
+  <circle class="dot" cx="420" cy="120" r="6"/>
+  <circle class="dot" cx="472" cy="120" r="6"/>
+  <circle class="dot" cx="524" cy="120" r="6"/>
+  <circle class="dot" cx="576" cy="120" r="6"/>
+
+  <text class="f" x="82"  y="104" text-anchor="middle">20s</text>
+  <text class="f" x="134" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="186" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="238" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="290" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="342" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="394" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="446" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="498" y="104" text-anchor="middle">20s</text>
+  <text class="f" x="550" y="104" text-anchor="middle">20s</text>
+
+  <text class="f" x="56"  y="150" text-anchor="middle">1.9s</text>
+  <text class="f" x="576" y="150" text-anchor="middle">202s</text>
+
+  <text class="s" x="340" y="196" text-anchor="middle">La regularidad metronómica delata automatización, no actividad humana</text>
+</svg>

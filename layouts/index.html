@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">// </div>
+    <h1>{{ .Site.Params.heroTitle | default "Información propia expuesta voluntariamente en internet" }}</h1>
+    <p>{{ .Site.Params.heroSubtitle | default "Estudiante de técnico en informática. Aquí documento lo que investigo y aprendo." }}</p>
+    <div class="cta-row">
+      <a href="{{ "/posts/" | relURL }}" class="btn btn-primary">Ver proyectos</a>
+      {{ with .Site.Params.cvFile }}<a href="{{ . | relURL }}" class="btn" download>Descargar CV</a>{{ end }}
+      {{ with .Site.Params.github }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener">GitHub</a>{{ end }}
+    </div>
+  </section>
+
+
+  <section class="projects">
+    <h2 class="section-title">Proyectos recientes</h2>
+    {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
+      <a href="{{ .RelPermalink }}" class="post-item">
+        <div class="date">{{ .Date.Format "2006-01-02" }}</div>
+        <h3>{{ .Title }}</h3>
+        <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+        {{ with .Params.tags }}
+        <div class="post-tags">
+          {{ range first 5 . }}<span>{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </a>
+    {{ else }}
+      <p style="color:var(--text-dim)">Aún no hay proyectos publicados.</p>
+    {{ end }}
+  </section>
+
+</div>
+{{ end }}

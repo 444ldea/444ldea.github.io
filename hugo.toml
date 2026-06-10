@@ -1,0 +1,39 @@
+baseURL = "https://example.com/"
+locale = "es"
+title = "Felipe A."
+
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 30
+
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+    noClasses = false
+    lineNos = false
+    tabWidth = 2
+  [markup.goldmark.renderer]
+    unsafe = true   # permite HTML/SVG embebido en el Markdown de los writeups
+
+[params]
+  author = "Felipe A."
+  description = "Portafolio"
+  # Edita estos enlaces:
+  github = "https://github.com/444ldea"
+  linkedin = "https://linkedin.com/in/felipe-aldea"
+  email = "aldeatorres.f@gmail.com"
+  cvFile = "/files/cv.pdf"   # coloca tu CV en static/files/cv.pdf
+
+[menu]
+  [[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Proyectos"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Sobre mí"
+    url = "/about/"
+    weight = 3

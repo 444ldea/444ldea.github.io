@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ "/" | relURL }}" class="brand">{{ .Site.Params.author | default "portfolio" }}</a>
+    <nav class="nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
