@@ -34,6 +34,10 @@ summaryLength = 30
     url = "/posts/"
     weight = 2
   [[menu.main]]
+    name = "Writeups"
+    url = "/writeups/"
+    weight = 3
+  [[menu.main]]
     name = "Sobre mí"
     url = "/about/"
-    weight = 3
+    weight = 4
