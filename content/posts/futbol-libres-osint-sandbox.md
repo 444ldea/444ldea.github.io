@@ -13,6 +13,7 @@ toc: true
 | **Tipo** | OSINT Pasivo + Análisis Dinámico en Sandbox |
 | **Objetivo** | `https://futbol-libres.su/` |
 | **Fecha** | 21 de junio de 2026 |
+| **Analista** | Felipe A. |
 | **Entorno dinámico** | REMnux 7 en VirtualBox (modo NAT, snapshot pre-análisis) |
 | **Clasificación** | Portafolio profesional — uso educativo |
 
